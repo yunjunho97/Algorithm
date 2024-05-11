@@ -19,10 +19,10 @@ public class Test4_ReverseString {
             str[i] = scanner.nextLine();
         }
 
-        System.out.println(solotion(count, str));
+        System.out.println(solution(count, str));
     }
 
-    public static String solotion(int count, String str[]) {
+    public static String solution(int count, String str[]) {
         String[] answer = new String[count];
         String answer2 = "";
 
