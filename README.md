@@ -3,7 +3,7 @@ toUpperCase(): 대문자로 변환
 toLowerCase(): 소문자로 변환  
 ```
 str = str.toUpperCase();
-c = Character.toUpperCase();
+c = Character.toUpperCase('C');
 ```
 <br/>
 
@@ -12,6 +12,19 @@ isLowerCase(): 대문자면 false, 소문자면 true
 ```
 Character.isUpperCase('A'); //true
 Character.isUpperCase('a'); //false
+```
+<br/>
+
+equalsIgnoreCase(): 대소문자에 관계없이 같은지 비교
+```
+"aaa".equalsIgnoreCase("aAa"); //true
+```
+<br/>
+
+isAlphabetic(): 알파벳이면 true, 아니면 false
+```
+Character.isAlphabetic('a'); //true
+Character.isAlphabetic('b'); //false
 ```
 <br/>
 
@@ -24,4 +37,11 @@ toCharArray(): String을 Char 배열 객체로 만듬
 
 StringBuiler: https://github.com/yunjunho97/Algorithm/blob/main/src/library_memo/StringBuilder_memo.java
 <br/>
+<br/>
 
+replaceAll(): 다른 문자로 대체
+```
+str.replaceAll("a", "");
+//문자열에서 "a"를 "(공백)"으로 대체
+```
+<br/>
