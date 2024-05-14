@@ -25,4 +25,21 @@ public class Test6_RemoveDuplicationCharacter {
 
         return answer;
     }
+
+    //indexOf 사용
+    public static String solution2(String inputString){
+        String answer = "";
+
+        for(int i = 0; i < inputString.length(); i++){
+
+            //해당 문자의 현재 위치와, 해당 문자가 제일 처음 나오는 위치를 비교
+            //두개가 같다면 그건 문자열에서 최초로 나온 문자
+            //만약 다르다면 이전에 나왔던 중복되는 문자
+            if(i == inputString.indexOf(inputString.charAt(i))){
+                answer += inputString.charAt(i);
+            }
+        }
+
+        return answer;
+    }
 }
