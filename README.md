@@ -64,3 +64,17 @@ str.replaceAll("a", "");
 https://github.com/yunjunho97/Algorithm/blob/main/src/library_memo/NumberBase_memo.java
 <br/>
 <br/>
+
+HashMap:  
+https://github.com/yunjunho97/Algorithm/blob/main/src/library_memo/HashMap_memo.java  
+getOrDefault()
+```
+getOrDefault(key, default);
+//key의 value를 가져오되
+//그런 key가 없다면 default값을 가져온다
+```
+<br/>
+
+TreeSet: 주로 중복 제거를 위해 사용  
+https://github.com/yunjunho97/Algorithm/blob/main/src/library_memo/TreeSet_memo.java
+<br/>
