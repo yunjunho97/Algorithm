@@ -7,6 +7,7 @@ public class SelectionSort {
         solution(n, list);
     }
 
+    //가장 앞부터 제일 작은 수가 쌓여가는 방식
     public static void solution(int n, int[] list){
         //n 배열의 길이
         //list 배열
