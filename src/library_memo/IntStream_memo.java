@@ -9,7 +9,7 @@ public class IntStream_memo {
     public static void main(String[] args) {
 
         //IntStream 생성
-        //1. 배열에서 생성
+        //1. 배열에서 생성 - 이것보다 4번이 나은거같음
         int[] numbers = {1, 2, 3, 4, 5};
         IntStream streamByArray = Arrays.stream(numbers);
 
