@@ -62,12 +62,13 @@ public class Test61_PriorityQueue {
         int max = list.get(0)[1];
 
         int j = 0;
-        for(int i = max; i >= 1; i--){
+        for(int i = max; i >= 1; i--){ //max일 부터 역순으로 1일까지 탐색
             for(; j < list.size(); j++){
+                //현재일과 다른일이 나타나면 중지 -> 5일->3일같은 건너뛰는 경우에 대해서도 자연스럽게 처리됨
                 if(i != list.get(j)[1]) break;
                 queue.add(list.get(j)[0]);
             }
-            if(!queue.isEmpty()) answer += queue.poll();
+            if(!queue.isEmpty()) answer += queue.poll(); //1일당 한번의 합산
         }
         return answer;
     }
