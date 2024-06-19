@@ -54,7 +54,7 @@ public class Test68_MSTKruskalUnionFind {
     public static void Union(int a, int b){
         int fa = Find(a);
         int fb = Find(b);
-        if(fa != fb) unf[fa] = fb;
+        if(fa != fb) unf[fa] = fb; //1[1] 2[2] -> 1[2] 2[2] 생각
     }
 }
 class Edge68{
