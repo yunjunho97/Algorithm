@@ -5,7 +5,7 @@ public class StringBuilder_memo {
     public static void main(String[] args) {
 
         StringBuilder stringBuilder = new StringBuilder("0123456");
-
+        System.out.println(stringBuilder);
         //0. toString() StringBuilder의 내용을 String으로 변환하여 반환
         //StringBuilder 는 내부적으로 char[] 배열을 통해 문자열을 저장하고 관리한다
         //StringBuilder 객체가 생성될 때 배열이 초기 크기로 할당되고
