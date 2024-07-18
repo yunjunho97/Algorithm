@@ -82,3 +82,9 @@ https://github.com/yunjunho97/Algorithm/blob/main/src/library_memo/TreeSet_memo.
 IntStream:  
 https://github.com/yunjunho97/Algorithm/blob/main/src/library_memo/IntStream_memo.java
 <br/>
+
+List.removeIf(람다식)
+```
+nodes.removeIf(node -> node.key == 1);
+```
+<br/>
