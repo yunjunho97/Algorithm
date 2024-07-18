@@ -4,6 +4,10 @@ public class NumberBase_memo {
     public static void main(String[] args) {
 
         int decimal = 10;
+        //n진수로 변환
+        String temp = Integer.toString(decimal, 3);
+        System.out.println(temp);
+
         //10진수 -> 2진수
         String binary = Integer.toBinaryString(decimal);
         System.out.println("binary = " + binary);

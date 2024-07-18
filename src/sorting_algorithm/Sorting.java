@@ -95,5 +95,9 @@ public class Sorting {
         Collections.sort(entryList, (o1, o2) -> o2.getValue() - o1.getValue());
         System.out.println(entryList);
 
+        System.out.println("---------------------------------------");
+        System.out.println("우선순위 큐에서 객체의 필드값을 기준으로 정렬");
+        //PriorityQueue<Edge66> queue = new PriorityQueue<>((o1, o2) -> o2.cost - o1.cost);
+
     }
 }
