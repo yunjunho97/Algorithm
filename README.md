@@ -21,6 +21,15 @@ equalsIgnoreCase(): 대소문자에 관계없이 같은지 비교
 ```
 <br/>
 
+<br/>
+
+startsWith: 특정 문자열을 포함하고 있는지
+```
+str.startsWith("world");
+str.startsWith("world", 7); //특정 위치부터 포함여부
+```
+<br/>
+
 isAlphabetic(): 알파벳이면 true, 아니면 false
 ```
 Character.isAlphabetic('a'); //true
