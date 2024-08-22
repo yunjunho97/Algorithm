@@ -26,21 +26,22 @@ public class Test1 {
     }
     //l을 지으려면 w가 필요함
     public static int solution(HashMap<Integer, ArrayList<Integer>> map, int[] buildTime, int want){
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(want);
+        HashSet<Integer> set = new HashSet<>();
+        set.add(want);
         int max = buildTime[want];
 
         int[] dp = Arrays.copyOf(buildTime, buildTime.length);
 
-        while(!queue.isEmpty()){
-            int key = queue.poll();
-            for(int precede : map.get(key)) {
-                if(dp[precede] < dp[key] + buildTime[precede]) {
-                    dp[precede] = dp[key] + buildTime[precede];
+        while(!set.isEmpty()){
+            HashSet<Integer> nextSet = new HashSet<>();
+            for(int key : set){
+                for(int precede : map.get(key)) {
+                    dp[precede] = Math.max(dp[precede], dp[key] + buildTime[precede]);
                     max = Math.max(max, dp[precede]);
-                    queue.add(precede);
+                    nextSet.add(precede);
                 }
             }
+            set = nextSet;
         }
 
         return max;
